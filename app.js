@@ -8,7 +8,12 @@ app.use(cors());
 
 app.get('/', async (req, res) => {
   const response = await DominosAPI.getStoreMenu('3769');
-  res.send(response.Categorization);
+  res.send(response);
+});
+
+app.get('/getstoreinfo', async (req, res) => {
+  const response = await DominosAPI.getStoreInfo('3769');
+  res.send(response);
 });
 
 app.listen(3030, () => {

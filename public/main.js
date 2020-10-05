@@ -3,7 +3,10 @@ const fetchData = async () => {
 
   const data = await response.json();
 
-  console.log(data);
+  return data;
 };
 
-fetchData();
+(async () => {
+  const fetchProducts = await fetchData();
+  console.log(fetchProducts.Products);
+})();

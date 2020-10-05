@@ -1,12 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script src="main.js"></script>
-  </head>
-  <body>
-    <h1>Welcome</h1>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="/public/homepage.css">
+  <!-- <script src="public/main.js"></script> -->
+</head>
+
+<body>
+  <header role="banner" class="js-headerContainer homepage" data-dpz-track-group="navigation" data-quid="page-header">
+    <div class="js-cookieBanner site-nav_cookie-banner"></div>
+    <nav class="nav nav--primary" aria-label="primary" data-quid="primary-nav">
+      <div class="nav__inner">
+        <div class="nav__group is-hidden@desktop">
+          <button class="nav__hamburger site-nav__toggle site-nav__toggle--nav js-toggleNavigation"
+            aria-label="Toggle Side Menu" data-dpz-track-evt-name="hamburger">
+            <svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 0 36 30" width="36">
+              <g fill="black" fill-rule="evenodd">
+                <path d="m0 0v6h36v-6z" />
+                <path d="m0 12v6h36v-6z" />
+                <path d="m0 24v6h36v-6z" />
+              </g>
+            </svg>
+          </button>
+        </div>
+        <ul class="nav__group js-siteMainNavigation">
+          <li class="nav__menu-item nav__logo">
+            <a href="/en/" class="navigation-home" data-quid="dpz-icon-home-link">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 214.6 228.87">
+                <path
+                  d="m210.79 62.11-58.3-58.3a13 13 0 0 0 -18.42 0l-48.89 48.89-81.37 81.38a13 13 0 0 0 0 18.42l58.3 58.31a13 13 0 0 0 18.42 0l72.94-72.95 57.32-57.32a13 13 0 0 0 0-18.42"
+                  fill="#fff" />
+                <path
+                  d="m155.4 83.11a16.87 16.87 0 1 1 5-11.94 16.87 16.87 0 0 1 -5 11.94m51.27-16.85-58.3-58.26a7.2 7.2 0 0 0 -10.18 0l-63 63 68.47 68.47 63-63a7.2 7.2 0 0 0 0-10.18"
+                  fill="#d31837" />
+                <path
+                  d="m84.09 131.79a16.86 16.86 0 1 1 -4.95 11.94 16.82 16.82 0 0 1 4.95-11.94m-25.67 23.21a16.93 16.93 0 1 1 4.93-12 16.92 16.92 0 0 1 -4.93 12m-50.49-16.8a7.2 7.2 0 0 0 0 10.18l58.3 58.31a7.2 7.2 0 0 0 10.18 0l63-63-68.48-68.49z"
+                  fill="#0078ae" /><text fill="#fff" font-family="MyriadPro-Semibold, MyriadPro Semibold"
+                  font-size="33.33" font-weight="700" transform="translate(99.13 220.53)">®</text>
+              </svg>
+            </a>
+          </li>
+          <li class="nav__menu-item order">
+            <a href="/en/pages/order"
+              class="qa-Cl_order js-orderOnlineNavigation action-ctas__icon--order-online c-site-nav-main-link-0"
+              data-quid="main-navigation-order-online">Order Online</a>
+            <ul class="js-mainSubNav nav__menu-item-subnav ishidden@desktop"></ul>
+          </li>
+          <li class="nav__menu-item">
+            <a href="/en/pages/order/menu" class="action-cas__icon--menu qa-Cl_Menu c-site-nav-main-link-1"
+              data-quid="main-navigation-menu">Menu</a>
+            <ul class="js-mainSubNav nav__menu-item-subnav ishidden@desktop"></ul>
+          </li>
+          <li class="nav__menu-item">
+            <a href="/en/pages/order/coupon"
+              class="action-ctas__icon--coupons qa-Cl_Coupons jscouponPageNavigation c-site-nav-main-link-2"
+              data-quid="main-navigation-coupons">Coupons</a>
+            <ul class="js-mainSubNav nav__menu-item-subnav ishidden@desktop"></ul>
+          </li>
+          <li class="nav__menu-item">
+            <a href="/en/pages/tracker"
+              class="action-ctas__icon-tracker qa-Cl-Loc js-pizzaTracker c-site-nav-main-link-3"
+              data-quid="main-navigation-tracker">Tracker</a>
+            <ul class="js-mainSubNav nav__menu-item-subnav ishidden@desktop"></ul>
+          </li>
+          <li class="nav__menu-item">
+            <a href="/en/pages/rewards" class="js-navRewards navigation-rewards c-site-nav-main-link-4"
+              data-quid="main-navigation-rewards">Rewards</a>
+          </li>
+          <li class="nav__menu-item is-hidden@desktop">
+            <a href="/en/pages/rewards" class="js-navRewards navigation-rewards c-site-nav-main-link-5"
+              data-quid="main-navigation-pizza-profile-rewards">Pizza Profile</a>
+            <ul class="js-mainSubNav nav__menu-item-subnav ishidden@desktop"></ul>
+          </li>
+          <li class="nav__menu-item is-hidden@handheld nav__menu-item-floating-btn">
+            <a data-dpz-track-evt-pagename="Store Locator Dropdown" href="/en/pages/order/#!/locations/search"
+              class="js-storeLocatorDropdown c-site-nav-main-link-6"
+              data-quid="main-navigation-view-your-local_dominos">View Your Local Dominos</a>
+            <ul class="js-mainSubNav nav__menu-item-subnav ishidden@desktop"></ul>
+          </li>
+          <li class="nav__menu-item is-hidden@desktop"></li>
+        </ul>
+        <div class="direction-phone ishidden@handheld"></div>
+        <div class="js-headerProfileContainer nav__group nav__group--profile is-hidden is-visible--flex@desktop"></div>
+        <div class="ishidden@desktop is-hidden js-savedCartToastContainer"></div>
+        <div class="nav__group nav__group-chart"></div>
+      </div>
+      <div id="js-subNavigationPage" class="js-subNavigationPage nav__sub-banner-wrap"></div>
+    </nav>
+    <nav class="nav nav-drawer is-hidden@desktop js-mobileNav" data-quid="mobile-nav" aria-hidden="true"></nav>
+    <div class="js-miniNavContainer mini-nav-container"></div>
+    <div class="nav__untoggle-overlay site-nav_untoggle-overlay js-untoggleOverlay"></div>
+  </header>
+</body>
+
 </html>
